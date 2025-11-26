@@ -37,6 +37,14 @@
   .gallery figcaption{font-size:13px;color:#cfd6df;padding:8px 10px}
   .muted{color:var(--muted)}
 .split{display:grid;grid-template-columns:5fr 7fr;gap:18px;align-items:center}.split.flip{grid-template-columns:7fr 5fr}.split .img{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000}.split .img img{width:100%;height:420px;object-fit:cover;display:block}.lead{font-size:18px;line-height:1.9;color:var(--text)}.gallery.mosaic{grid-template-columns:repeat(6,1fr)}.gallery.mosaic img{height:260px}.gallery .span-3{grid-column:span 3}.gallery .span-2{grid-column:span 2}.gallery .tall{height:360px}.caption{font-size:13px;color:#cfd6df;margin-top:6px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;text-decoration:none;font-weight:600;border:1px solid var(--line);background:#1a1f27;color:#e6e7eb}
+.btn:hover{filter:brightness(1.1)}
+.btn-wa{background:#25D366;border-color:#25D366;color:#0a0a0a}
+.btn-wa svg{width:18px;height:18px}
+/* Botón flotante WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:9999;background:#25D366;color:#0a0a0a;border-radius:999px;padding:12px 14px;display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.wa-float svg{width:22px;height:22px}
+@media(max-width:640px){.wa-float span{display:none}}
 </style>
 </head>
 <body>
@@ -47,7 +55,7 @@
       <div class="meta">
         <div>
           <h1>Residencia Juristas, Ciudad Satélite</h1>
-          <div class="muted">C./img/ircuito Juristas, Ciudad Satélite · Naucalpan</div>
+          <div class="muted">Circuito Juristas, Ciudad Satélite · Naucalpan</div>
         </div>
         <div class="pill"><small>Venta</small><div style="font-weight:700;font-size:22px">$14,000,000 MXN</div></div>
       </div>
@@ -207,6 +215,12 @@
         <div>
           <div><b>Neguib Wejebe</b></div>
           <div class="muted">WhatsApp 55 4349 0390</div>
+          <div style="margin-top:10px">
+            <a class="btn btn-wa" target="_blank" rel="noopener" href="https://wa.me/525543490390?text=Hola%20Neguib%2C%20me%20interesa%20la%20Residencia%20Juristas%20en%20Ciudad%20Sat%C3%A9lite.%20%C2%BFPodemos%20agendar%20una%20visita%3F">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.19c-.28-.14-1.63-.8-1.88-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.66-1.56-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.32.43-.48.14-.16.18-.28.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.46.07-.7.34-.25.28-.96.94-.96 2.29s.98 2.65 1.11 2.83c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.63-.66 1.86-1.29.23-.63.23-1.17.16-1.29-.07-.12-.25-.2-.52-.34z"/></svg>
+              <span>Escríbeme por WhatsApp</span>
+            </a>
+          </div>
         </div>
         <div>
           <div class="muted" style="font-size:13px">“Los datos pueden variar sin previo aviso; sujetos a disponibilidad y validación documental.”</div>
@@ -215,5 +229,10 @@
     </section>
 
   </div>
+  <!-- Botón flotante WhatsApp -->
+  <a class="wa-float" target="_blank" rel="noopener" href="https://wa.me/525543490390?text=Hola%20Neguib%2C%20vengo%20de%20la%20ficha%20web%20de%20Residencia%20Juristas%20(Ciudad%20Sat%C3%A9lite).%20%C2%BFMe%20compartes%20m%C3%A1s%20informaci%C3%B3n%20o%20una%20cita%3F">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M19.11 17.19c-.28-.14-1.63-.8-1.88-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.24-1.38-.83-.74-1.39-1.66-1.56-1.94-.16-.28-.02-.43.12-.57.12-.12.28-.32.43-.48.14-.16.18-.28.27-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.46.07-.7.34-.25.28-.96.94-.96 2.29s.98 2.65 1.11 2.83c.14.18 1.93 2.95 4.68 4.14.65.28 1.16.45 1.56.58.65.21 1.24.18 1.71.11.52-.08 1.63-.66 1.86-1.29.23-.63.23-1.17.16-1.29-.07-.12-.25-.2-.52-.34z"/></svg>
+    <span>WhatsApp</span>
+  </a>
 </body>
 </html>
